@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio Landing Page - Software Developer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#258df4",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .code-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(37, 141, 244, 0.05) 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+
+        .glow-accent {
+            background: radial-gradient(circle at 50% 50%, rgba(37, 141, 244, 0.15) 0%, transparent 60%);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-300">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <header
+            class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+            <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-3 text-primary">
+                    <span class="material-symbols-outlined text-3xl font-bold">terminal</span>
+                    <h2 class="text-slate-900 dark:text-slate-100 text-xl font-black leading-tight tracking-tight">
+                        DevPortfolio</h2>
+                </div>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-semibold transition-colors"
+                        href="#">Home</a>
+                    <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-semibold transition-colors"
+                        href="#">Projects</a>
+                    <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-semibold transition-colors"
+                        href="#">About</a>
+                    <a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-semibold transition-colors"
+                        href="#">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="hidden sm:flex min-w-[100px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">
+                        <span>Resume</span>
+                    </button>
+                    <button class="md:hidden text-slate-900 dark:text-slate-100">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1">
+            <section class="relative @container py-16 lg:py-24">
+                <div class="absolute inset-0 code-pattern pointer-events-none opacity-50"></div>
+                <div class="absolute top-1/4 right-0 w-[500px] h-[500px] glow-accent pointer-events-none"></div>
+                <div class="max-w-[1280px] mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="flex flex-col gap-8 z-10">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider w-fit">
+                            <span class="relative flex h-2 w-2">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                            </span>
+                            Available for new projects
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <h1
+                                class="text-slate-900 dark:text-white text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight">
+                                Full-stack Developer &amp; <span class="text-primary">UI/UX Enthusiast</span>
+                            </h1>
+                            <p
+                                class="text-slate-600 dark:text-slate-400 text-lg lg:text-xl font-normal leading-relaxed max-w-[600px]">
+                                Building robust applications and crafting seamless user experiences with modern web
+                                technologies. I turn complex problems into elegant digital solutions.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <button
+                                class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-base font-bold shadow-xl shadow-primary/30 hover:scale-[1.02] transition-transform">
+                                <span>View Projects</span>
+                            </button>
+                            <button
+                                class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white text-base font-bold hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">
+                                <span>Contact Me</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative hidden lg:block">
+                        <div
+                            class="relative z-10 rounded-xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900">
+                            <div
+                                class="flex items-center gap-2 px-4 py-3 bg-slate-200 dark:bg-slate-800 border-b border-slate-300 dark:border-slate-700">
+                                <div class="flex gap-1.5">
+                                    <div class="size-3 rounded-full bg-red-500"></div>
+                                    <div class="size-3 rounded-full bg-amber-500"></div>
+                                    <div class="size-3 rounded-full bg-green-500"></div>
+                                </div>
+                                <div class="mx-auto text-xs text-slate-500 font-mono">portfolio.tsx</div>
+                            </div>
+                            <div class="p-6 font-mono text-sm leading-relaxed">
+                                <p class="text-purple-400">const <span class="text-blue-400">Developer</span> = {</p>
+                                <p class="pl-4 text-slate-100">name: <span class="text-emerald-400">'Alex
+                                        Rivera'</span>,</p>
+                                <p class="pl-4 text-slate-100">role: <span class="text-emerald-400">'Full-stack
+                                        Engineer'</span>,</p>
+                                <p class="pl-4 text-slate-100">focus: [<span class="text-emerald-400">'React'</span>,
+                                    <span class="text-emerald-400">'TypeScript'</span>, <span
+                                        class="text-emerald-400">'Node'</span>],
+                                </p>
+                                <p class="pl-4 text-slate-100">passionateAbout: <span class="text-emerald-400">'Clean
+                                        Code &amp; UX'</span>,</p>
+                                <p class="text-slate-100">};</p>
+                                <p class="mt-4 text-slate-500">// Building something amazing...</p>
+                                <div
+                                    class="mt-4 h-32 w-full bg-primary/5 rounded border border-primary/10 flex items-center justify-center">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-4xl animate-pulse">keyboard_command_key</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-12 bg-slate-50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
+                <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+                    <h3
+                        class="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-[0.2em] mb-8 text-center">
+                        Current Tech Stack</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                        <div
+                            class="flex flex-col items-center gap-3 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark hover:border-primary transition-colors group">
+                            <div class="text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-4xl">sdk</span>
+                            </div>
+                            <span class="text-sm font-bold">React</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-3 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark hover:border-primary transition-colors group">
+                            <div class="text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-4xl">javascript</span>
+                            </div>
+                            <span class="text-sm font-bold">TypeScript</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-3 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark hover:border-primary transition-colors group">
+                            <div class="text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-4xl">terminal</span>
+                            </div>
+                            <span class="text-sm font-bold">Node.js</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-3 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark hover:border-primary transition-colors group">
+                            <div class="text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-4xl">language</span>
+                            </div>
+                            <span class="text-sm font-bold">Next.js</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-3 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark hover:border-primary transition-colors group">
+                            <div class="text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-4xl">database</span>
+                            </div>
+                            <span class="text-sm font-bold">PostgreSQL</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-3 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark hover:border-primary transition-colors group">
+                            <div class="text-slate-600 dark:text-slate-400 group-hover:text-primary transition-colors">
+                                <span class="material-symbols-outlined text-4xl">palette</span>
+                            </div>
+                            <span class="text-sm font-bold">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24">
+                <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-slate-900 dark:text-white text-4xl font-black tracking-tight">Expertise
+                                &amp; Services</h2>
+                            <p class="text-slate-600 dark:text-slate-400 text-lg max-w-[500px]">Specializing in
+                                end-to-end development and high-fidelity UI design.</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <button
+                                class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800">
+                                <span class="material-symbols-outlined">west</span>
+                            </button>
+                            <button
+                                class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800">
+                                <span class="material-symbols-outlined">east</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div
+                            class="group p-8 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 hover:bg-primary/5 hover:border-primary transition-all flex flex-col gap-6">
+                            <div
+                                class="size-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                                <span class="material-symbols-outlined text-3xl">desktop_windows</span>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <h3 class="text-xl font-bold group-hover:text-primary transition-colors">Web Development
+                                </h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                    Building responsive, performant, and accessible web applications using modern
+                                    frameworks and best practices.
+                                </p>
+                            </div>
+                            <ul class="flex flex-wrap gap-2 mt-auto">
+                                <li
+                                    class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">
+                                    Single Page Apps</li>
+                                <li
+                                    class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">
+                                    Performance</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="group p-8 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 hover:bg-primary/5 hover:border-primary transition-all flex flex-col gap-6">
+                            <div
+                                class="size-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                                <span class="material-symbols-outlined text-3xl">draw</span>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <h3 class="text-xl font-bold group-hover:text-primary transition-colors">UI/UX Design
+                                </h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                    Designing intuitive interfaces with a user-centric approach, focusing on aesthetics
+                                    and usability.
+                                </p>
+                            </div>
+                            <ul class="flex flex-wrap gap-2 mt-auto">
+                                <li
+                                    class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">
+                                    Figma</li>
+                                <li
+                                    class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">
+                                    Prototyping</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="group p-8 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 hover:bg-primary/5 hover:border-primary transition-all flex flex-col gap-6">
+                            <div
+                                class="size-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                                <span class="material-symbols-outlined text-3xl">settings_input_component</span>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <h3 class="text-xl font-bold group-hover:text-primary transition-colors">API
+                                    Architecture</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                    Developing scalable and secure backend services with REST or GraphQL APIs to power
+                                    modern frontends.
+                                </p>
+                            </div>
+                            <ul class="flex flex-wrap gap-2 mt-auto">
+                                <li
+                                    class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">
+                                    RESTful</li>
+                                <li
+                                    class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">
+                                    GraphQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 bg-primary/5 border-t border-slate-200 dark:border-slate-800">
+                <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+                    <div
+                        class="bg-background-dark rounded-2xl p-10 lg:p-16 relative overflow-hidden flex flex-col items-center text-center gap-8 border border-primary/20">
+                        <div class="absolute inset-0 code-pattern opacity-10"></div>
+                        <div class="relative z-10 flex flex-col gap-4">
+                            <h2 class="text-4xl lg:text-5xl font-black text-white">Have a project in mind?</h2>
+                            <p class="text-slate-400 text-lg max-w-[600px] mx-auto">
+                                I'm currently looking for new opportunities and collaborations. Whether you have a
+                                question or just want to say hi, I'll try my best to get back to you!
+                            </p>
+                        </div>
+                        <div class="relative z-10">
+                            <button
+                                class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-16 px-10 bg-primary text-white text-lg font-bold shadow-2xl shadow-primary/40 hover:scale-[1.05] transition-transform">
+                                <span>Get In Touch</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="py-12 border-t border-slate-200 dark:border-slate-800">
+            <div
+                class="max-w-[1280px] mx-auto px-6 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-2xl">terminal</span>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm">© 2024 DevPortfolio. All rights reserved.</p>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a class="text-slate-500 hover:text-primary transition-colors" href="#">
+                        <span class="material-symbols-outlined">link</span>
+                    </a>
+                    <a class="text-slate-500 hover:text-primary transition-colors" href="#">
+                        <span class="material-symbols-outlined">terminal</span>
+                    </a>
+                    <a class="text-slate-500 hover:text-primary transition-colors" href="#">
+                        <span class="material-symbols-outlined">mail</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
